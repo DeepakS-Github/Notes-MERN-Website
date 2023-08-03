@@ -502,7 +502,7 @@ function Cards() {
             <div className="inline-flex -space-x-px text-sm w-full mx-auto flex justify-center gap-2">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
-                        className={`flex items-center justify-center px-3 h-8 leading-tight rounded-full bg-white border border-gray-300   ${currentPage === index + 1 ? 'active  bg-pink-600 text-white shadow-md' : 'hover:bg-gray-100'}`}
+                        className={`flex items-center justify-center px-3 h-8 leading-tight rounded-full border border-gray-300   ${currentPage === index + 1 ? 'active  bg-rose-600 text-white shadow-md' : 'hover:bg-gray-100 bg-white'}`}
                         key={index}
                         onClick={() => setCurrentPage(index + 1)}
                     >
