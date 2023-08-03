@@ -47,7 +47,7 @@ function Cards() {
 
     const fetchApiData = async () => {
         try {
-            const res = await fetch("http://localhost:4500/list");
+            const res = await fetch("https://notes-mern-website.vercel.app/list");
             const data = await res.json();
             data.sort((a, b) => {
                 if (a.pinned !== b.pinned) {
@@ -149,7 +149,7 @@ function Cards() {
         }
 
         try {
-            const response = await fetch(`http://localhost:4500/update/${noteId}`, {
+            const response = await fetch(`https://notes-mern-website.vercel.app/update/${noteId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -177,7 +177,7 @@ function Cards() {
     // API call to delete a note by ID
     const deleteNote = async (noteId) => {
         try {
-            const response = await fetch(`http://localhost:4500/remove/${noteId}`, {
+            const response = await fetch(`https://notes-mern-website.vercel.app/remove/${noteId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -213,7 +213,7 @@ function Cards() {
         }
 
         try {
-            const response = await fetch(`http://localhost:4500/update/${noteId}`, {
+            const response = await fetch(`https://notes-mern-website.vercel.app/update/${noteId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -259,7 +259,7 @@ function Cards() {
         }
 
         try {
-            const response = await fetch('http://localhost:4500/create', {
+            const response = await fetch('https://notes-mern-website.vercel.app/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
