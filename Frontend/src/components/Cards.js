@@ -340,7 +340,7 @@ function Cards() {
             {/* Navbar */}
             <nav
                 class="relative flex w-full flex-wrap items-center justify-center font-semibold bg-[#FBFBFB] py-2 text-white-500 shadow-lg hover:text-neutral-700 bg-gray-800 focus:text-white-700 lg:py-4">
-                <a class="text-xl text-white tracking-wider dark:text-white-200" href="/"
+                <a class="text-xl text-white tracking-wider" href="/"
                 >MemoMind </a>
             </nav>
 
@@ -358,9 +358,9 @@ function Cards() {
                     class={`fixed top-0 left-0 z-[1055]  h-full w-full overflow-y-auto overflow-x-hidden outline-none`}
                 >
                     <div class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto  items-center  min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[700px]">
-                        <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
-                            <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
-                                <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200">
+                        <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none">
+                            <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4">
+                                <h5 class="text-xl font-medium leading-normal text-neutral-800">
                                     {head} Note
                                 </h5>
 
@@ -438,7 +438,7 @@ function Cards() {
                                     </form>
                                 </div>
                             </div>
-                            <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                            <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4">
                                 <button
                                     type="button"
                                     class="inline-block rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal focus:outline-none focus:ring-0 hover:text-red-800"
