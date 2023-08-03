@@ -7,11 +7,11 @@ const PORT = 4500;
 const app = express();
 
 app.use(cors(
-    // {
-    //     origin: ["https://deploy-mern-frontend-two.vercel.app"],
-    //     methods: ["POST","GET"],
-    //     credentials: true
-    // }
+    {
+        origin: ["https://deploy-mern-frontend-two.vercel.app"],
+        methods: ["POST","GET","PUT","DELETE"],
+        credentials: true
+    }
 ));
 app.use(express.json());
 app.use('/', noteRoute);
