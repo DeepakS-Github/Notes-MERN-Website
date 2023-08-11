@@ -128,7 +128,7 @@ function Cards() {
 
     useEffect(() => {
         fetchApiData();
-    });
+    }, currentItems);
 
 
 
